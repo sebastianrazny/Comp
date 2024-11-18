@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CompTIA A+ Practice Exams</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>CompTIA A+ Practice Exams</h1>
+    <p>Master your CompTIA A+ Certification with practice tests.</p>
+  </header>
+  <main>
+    <section id="categories">
+      <h2>Select a Category</h2>
+      <div class="categories">
+        <button onclick="startQuiz('hardware')">Hardware</button>
+        <button onclick="startQuiz('networking')">Networking</button>
+        <button onclick="startQuiz('mobileDevices')">Mobile Devices</button>
+        <button onclick="startQuiz('troubleshooting')">Hardware Troubleshooting</button>
+        <button onclick="startQuiz('os')">Operating Systems</button>
+        <button onclick="startQuiz('security')">Security</button>
+        <button onclick="startQuiz('software')">Software Troubleshooting</button>
+        <button onclick="startQuiz('operations')">Operational Procedures</button>
+      </div>
+    </section>
+    <section id="quiz" class="hidden">
+      <h2 id="quiz-title"></h2>
+      <div id="question-container"></div>
+      <button id="next-btn" class="hidden" onclick="nextQuestion()">Next</button>
+    </section>
+    <section id="results" class="hidden">
+      <h2>Your Results</h2>
+      <p id="score"></p>
+      <button onclick="restartQuiz()">Restart</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 CompTIA Practice Exams</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
